@@ -10,4 +10,14 @@ In this project, Couchbase is containerized using Docker, making it easy to set 
 **Step 1: Pull the Couchbase Docker Image**
 To begin, the official Couchbase image was pulled from Docker Hub:
 
-docker pull couchbase
+    docker pull couchbase
+
+**Step 2: Create and Run a Docker Container**
+A container was created from the pulled image, mapping the local machine’s port 8091 to the container’s port 8091:
+
+    docker run -d --name db -p 8091-8097:8091-8097 -p 9123:9123 -p 11207:11207 -p 11210:11210 -p 11280:11280 -p 18091-18097:18091-18097 couchbase
+
+**Step 3: Accessing Couchbase in Browser**
+After the container started successfully, Couchbase was accessed in a browser by navigating to:
+
+    http://localhost:8091
