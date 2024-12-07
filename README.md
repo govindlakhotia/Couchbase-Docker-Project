@@ -21,3 +21,7 @@ A container was created from the pulled image, mapping the local machine’s por
 After the container started successfully, Couchbase was accessed in a browser by navigating to:
 
     http://localhost:8091
+
+## Video
+
+https://github.com/user-attachments/assets/b0b0bcea-6db2-4419-99c6-9efb7838afc8
